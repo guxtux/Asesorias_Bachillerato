@@ -1,0 +1,646 @@
+\documentclass[12pt]{beamer}
+\usepackage{Estilos/BeamerFC}
+\usepackage{Estilos/ColoresLatex}
+\input{Preambulos/preambulo_Beamer_Warsaw_seahorse}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{section in foot}%
+    \usebeamerfont{section in foot} \insertsection
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{subsection in foot}%
+    \usebeamerfont{subsection in foot}  \insertsubsection
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot} \insertshortdate{} \hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber \hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
+
+\setbeamertemplate{navigation symbols}{}
+\date{9 de marzo}
+
+\title{Sesión 1. Física}
+\subtitle{Asesoría}
+
+\begin{document}
+
+\maketitle
+\fontsize{14}{14}\selectfont
+\spanishdecimal{.}
+
+\section*{Contenido}
+\frame[allowframebreaks]{\tableofcontents[currentsection, hideallsubsections]}
+
+\section{La física}
+\frame[allowframebreaks]{\tableofcontents[currentsection, hideothersubsections]}
+
+\subsection{Definiciones}
+\begin{frame}
+\frametitle{¿Qué es la física?}
+La Física es una ciencia basada en las observaciones y medidas de los fenómenos físicos.
+\end{frame}
+\begin{frame}
+\frametitle{Más conceptos importantes}
+\setbeamercolor{item projected}{bg=bananayellow,fg=blue}
+\setbeamertemplate{enumerate items}{%
+\usebeamercolor[bg]{item projected}%
+\raisebox{1.5pt}{\colorbox{bg}{\color{fg}\footnotesize\insertenumlabel}}%
+}
+\begin{enumerate}[<+->]
+\item \textbf{Medir.} Es comparar una magnitud con otra de la misma especie llamada patrón.
+\seti
+\end{enumerate}
+\end{frame}
+\begin{frame}
+\frametitle{Más conceptos importantes}
+\setbeamercolor{item projected}{bg=bananayellow,fg=blue}
+\setbeamertemplate{enumerate items}{%
+\usebeamercolor[bg]{item projected}%
+\raisebox{1.5pt}{\colorbox{bg}{\color{fg}\footnotesize\insertenumlabel}}%
+}
+\begin{enumerate}[<+->]
+\conti    
+\item \textbf{Magnitud.} Es una cantidad medible de un sistema físico a la que se le pueden asignar distintos valores como resultado de una medición o una relación de medidas.
+\seti
+\end{enumerate}
+\end{frame}
+\begin{frame}
+\frametitle{Más conceptos importantes}
+\setbeamercolor{item projected}{bg=bananayellow,fg=blue}
+\setbeamertemplate{enumerate items}{%
+\usebeamercolor[bg]{item projected}%
+\raisebox{1.5pt}{\colorbox{bg}{\color{fg}\footnotesize\insertenumlabel}}%
+}
+\begin{enumerate}[<+->]
+\conti
+\item \textbf{Unidad.}  Es una cantidad de una determinada magnitud física, definida y adoptada por convención o por ley. Cualquier valor de una cantidad física puede expresarse como un múltiplo de la unidad de medida.
+\end{enumerate}
+\end{frame}
+
+\subsection{Tipos de Magnitudes y Unidades}
+
+\begin{frame}
+\frametitle{Las unidades fundamentales}
+\textbf{Unidades fundamentales: } del Sistema Internacional de Unidades (SI), son magnitudes físicas básicas que pueden medirse y son independientes de todas las demás.
+\end{frame}
+\begin{frame}
+\frametitle{Tabla de unidades fundamentales del SI}
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.1}
+\centering
+\begin{tabular}{| c | c | c |} \hline
+Magnitud & Unidad & Símbolo \\ \hline
+Longitud & metro & m \\ \hline
+Masa & kilogramo & kg \\ \hline
+Tiempo & segundo & s \\ \hline
+Temperatura & Kelvin & K \\ \hline
+Intensidad eléctrica & Ampere & A \\ \hline
+Intensidad luminosa & candela & cd \\ \hline
+Cantidad de sustancia & mol & mol \\  \hline  
+\end{tabular}
+\end{table}
+\end{frame}
+\begin{frame}
+\frametitle{Las unidades derivadas}
+\textbf{Unidades derivadas: } Son las unidades que provienen de una combinación de las unidades fundamentales.
+\end{frame}
+\begin{frame}
+\frametitle{Tabla de unidades derivadas}
+\begin{table}[H]
+\renewcommand{\arraystretch}{1}
+\centering
+\begin{tabular}{| c | c | c | c |} \hline
+Magnitud & Unidad & Símbolo & Equivalente \\ \hline 
+Fuerza	& Newton &	$\unit{\newton}$ &	$\unit[per-mode=symbol]{\kilo\gram\metre\per\square\second}$ \\ \hline
+Presión & Pascal & $\unit{\pascal}$ & $\unit[per-mode=symbol]{\kilo\gram\per\metre\square\second}$ \\ \hline
+Trabajo & Joule & $\unit{\joule}$ & $\unit[per-mode=symbol]{\kilo\gram\square\metre\per\square\second}$ \\ \hline
+Área & $\unit{\square\metre}$ &	$\unit{\square\metre}$ & $\unit{\square\metre}$ \\ \hline
+Volumen & $\unit{\cubic\metre}$ & $\unit{\cubic\metre}$ & $\unit{\cubic\metre}$ \\ \hline
+Aceleración	& $\unit[per-mode=symbol]{\metre\per\square\second}$ & $\unit[per-mode=symbol]{\metre\per\square\second}$ & $\unit[per-mode=symbol]{\metre\per\square\second}$ \\ \hline   
+\end{tabular}
+\end{table}
+\end{frame}
+\begin{frame}
+\frametitle{Cantidad escalar}
+\textbf{Magnitud Escalar.} Es la que queda definida con sólo indicar su cantidad en número y unidad de medida.
+\\
+\bigskip
+\pause
+Ejemplo: $\SI{5}{\kilo\gram},\, \SI{20}{\degreeCelsius}, \, \SI{250}{\square\metre}, \, \SI{40}{\milli\gram}$
+\end{frame}
+\begin{frame}
+\frametitle{Cantidad vectorial}
+\textbf{Magnitud Vectorial.} Es la que además de definir cantidad en número y unidad de medida, se requiere indicar la dirección y sentido en que actúan.
+\\
+\bigskip
+\pause
+Se representan de manera gráfica por vectores, los cuales deben tener: magnitud, dirección y sentido.
+\end{frame}
+
+\section{Conversión de unidades}
+\frame{\tableofcontents[currentsection, hideothersubsections]}
+\subsection{Procedimiento}
+
+\begin{frame}
+\frametitle{¿Para qué hacer cambio de unidades?}
+En ocasiones se va a requerir expresar una cantidad en términos de otras unidades, ya sea por convenencia o por que se requiere mantener un manejo homogéneo.
+\end{frame}
+\begin{frame}
+\frametitle{Regla básica}
+La regla básica es muy sencilla: \pause utilizar ya se un factor de conversión, o los factores de conversión necesarios.
+\\
+\bigskip
+\pause
+Estos factores de conversión \enquote{ajustan} las unidades, dejando entonces un problema de tipo artimético, es decir, donde tenemos que hacer multiplicaciones o divisiones.
+\end{frame}
+\begin{frame}
+\frametitle{El factor de conversión}
+El factor de conversión es un \enquote{uno} que manejamos de manera conveniente: \pause Consideremos el siguiente problema:
+\\
+\bigskip
+\pause
+Convertir $\SI[per-mode=symbol]{100}{\kilo\meter\per\hour}$ a $\SI[per-mode=symbol]{}{\meter\per\second}$. 
+\end{frame}
+\begin{frame}
+\frametitle{Los factores de conversión}
+Siempre es necesario contar de manera previa con los factores de conversión:
+\pause
+\begin{align*}
+\dfrac{\SI{1000}{\meter}}{\SI{1}{\kilo\meter}} \hspace{1.5cm} \dfrac{\SI{1}{\hour}}{\SI{3600}{\second}}
+\end{align*}
+\pause
+Que habrá que utilizar en la conversión:
+\end{frame}
+\begin{frame}
+\frametitle{Haciendo la conversión de unidades}
+\begin{eqnarray*}
+\begin{aligned}
+\SI[per-mode=fraction]{100}{\Cancel[red]{\kilo\meter}\per\Cancel[red]{\hour}} \pause \times \dfrac{\SI{1000}{\meter}}{\SI{1}{\Cancel[red]{\kilo\meter}}} \pause \times \dfrac{\SI{1}{\Cancel[red]{\hour}}}{\SI{3600}{\second}} &= \pause \dfrac{(100)(1000) \SI{}{\meter}}{\SI{3600}{\second}} = \\[0.5em] \pause
+&= \dfrac{\SI{100000}{\meter}}{\SI{3600}{\second}} = \\[0.5em] \pause
+&= \SI[per-mode=symbol]{27.77}{\meter\per\second}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Aplicando la regla}
+La regla de multiplicar por el respectivo factor de conversión, es la que debemos de utilizar en los ejercicios donde se pida hacer un cambio de unidades.
+\end{frame}
+\begin{frame}
+\frametitle{Tipos de unidades}
+Como ya conocemos las unidades fundamentales y las unidades derivadas, será posible encontrar ejercicios donde se considere:
+\setbeamercolor{item projected}{bg=byzantine,fg=white}
+\setbeamertemplate{enumerate items}{%
+\usebeamercolor[bg]{item projected}%
+\raisebox{1.5pt}{\colorbox{bg}{\color{fg}\footnotesize\insertenumlabel}}%
+}
+\begin{enumerate}[<+->]
+\item Longitud.
+\item Velocidad.
+\item Aceleración.
+\item Área.
+\item Volumen.
+\item Fuerza.
+\end{enumerate}
+\end{frame}
+\begin{frame}
+\frametitle{Caso especial: La temperatura}
+La conversión en grados entre las escalas de temperatura sigue ciertas regla de conversión, hay que tomar en cuenta que cada escala ya está definida.
+\end{frame}
+\begin{frame}
+\frametitle{Grados Celsius}
+En México se acostumbra reportar la temperatura ambiente por ejemplo, en grados centigrados $\unit{\degreeCelsius}$, \pause escala que toma como referencia dos puntos importantes:
+\pause
+\setbeamercolor{item projected}{bg=carmine,fg=white}
+\setbeamertemplate{enumerate items}{%
+\usebeamercolor[bg]{item projected}%
+\raisebox{1.5pt}{\colorbox{bg}{\color{fg}\footnotesize\insertenumlabel}}%
+}
+\begin{enumerate}[<+->]
+\item El punto de congelación del agua $\SI{0}{\degreeCelsius}$.
+\item El punto de ebullición del agua $\SI{100}{\degreeCelsius}$ a nivel del mar.
+\end{enumerate}
+\end{frame}
+\begin{frame}
+\frametitle{De grados Celsius a otras escalas}
+De grados Celsius $\unit{\degreeCelsius}$ a grados Fahrenheit $^{\circ} \text{F}$:
+\pause
+\begin{align*}
+\unit{\degreeCelsius} \times \dfrac{9}{5} + 32 = ^{\circ} \text{F}
+\end{align*}
+\end{frame}
+\begin{frame}
+\frametitle{De grados Celsius a otras escalas}
+\textbf{Ejemplo:} Convertir $\SI{32}{\degreeCelsius}$ a grados Fahrenheit $^{\circ} \text{F}$:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+\SI{32}{\degreeCelsius} \times \dfrac{9}{5} + 32 &= \pause \dfrac{288}{5} + 32 = \\[0.5em] \pause
+&= 57.6 + 32 \\[0.5em] \pause
+&= 89.6^{\circ} \text{F} 
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{De grados Celsius a otras escalas}
+De grados Celsius $\unit{\degreeCelsius}$ a grados Kelvin $\unit{\kelvin}$:
+\pause
+\begin{align*}
+\unit{\degreeCelsius} + 273.15
+\end{align*}
+\pause
+\textbf{Ejemplo:} Convertir $\SI{32}{\degreeCelsius}$ a grados Kelvin $\unit{\kelvin}$:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+\SI{32}{\degreeCelsius} + 273.15 = \pause \SI{305.15}{\kelvin}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{De grados Fahrenheit a otras escalas}
+De grados Fahrenheit $^{\circ} \text{F}$ a grados Celsius $\unit{\degreeCelsius}$:
+\pause
+\begin{align*}
+\left( ^{\circ} \text{F} - 32 \right) \times \dfrac{5}{9} = \unit{\degreeCelsius}
+\end{align*}
+\end{frame}
+\begin{frame}
+\frametitle{De grados Fahrenheit a otras escalas}
+\textbf{Ejemplo:} Convertir $100^{\circ} \text{F}$ a grados Celsius $\unit{\degreeCelsius}$:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+\left( 100^{\circ} \text{F} - 32 \right) \times \dfrac{5}{9} &= \pause 68 \times \dfrac{5}{9} = \\[0.5em] \pause
+&= \dfrac{340}{9} \\[0.5em] \pause
+&= \SI{37.77}{\degreeCelsius}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Conviertiendo grados Kelvin}
+Una vez conocida la regla para trasformar grados Celsius a Kelvin, es posible hacer la conversión de grados Kelvin a Fahrenheit, usando una conversión intermedia, logrando expresar la temperatura en la escala deseada.
+\end{frame}
+
+% \section{Mediciones y tablas}
+% \frame{\tableofcontents[currentsection, hideothersubsections]}
+% \subsection{Ejercicio 1}
+
+% \begin{frame}
+% \frametitle{Enunciado Problema 1}
+% En una competencia olímpica de salto largo seleccionaron a $7$ jueces para medir un salto cuyas mediciones se muestran en el siguiente cuadro.
+% \end{frame}
+% \begin{frame}
+% \frametitle{Enunciado del Problema 1}
+% Obtener el:
+% \pause
+% \setbeamercolor{item projected}{bg=black,fg=white}
+% \setbeamertemplate{enumerate items}{%
+% \usebeamercolor[bg]{item projected}%
+% \raisebox{1.5pt}{\colorbox{bg}{\color{fg}\footnotesize\insertenumlabel}}%
+% }
+% \begin{enumerate}[<+->]
+% \item Valor promedio.
+% \item Error absoluto.
+% \item Error relativo.
+% \item Error porcentual.
+% \item Desviación media.
+% \end{enumerate}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Datos del salto}
+% \begin{table}
+% \renewcommand{\arraystretch}{1}
+% \centering
+% \begin{tabular}{| c |} \hline
+% Mediciones en $\unit{\meter}$ \\ \hline
+% $\SI{8.90}{\meter}$ \\ \hline
+% $\SI{8.92}{\meter}$ \\ \hline
+% $\SI{8.88}{\meter}$ \\ \hline
+% $\SI{8.79}{\meter}$ \\ \hline
+% $\SI{8.91}{\meter}$ \\ \hline
+% $\SI{8.93}{\meter}$ \\ \hline
+% $\SI{8.89}{\meter}$ \\ \hline
+% \end{tabular}
+% \end{table}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Valor promedio}
+% Se define el valor promedio $\bar{x}$ de un conjunto de datos, como el cociente de la suma de los datos dividido entre el total de datos, es decir:
+% \pause
+% \begin{align*}
+% \bar{x} = \nsum_{i=1}^{n} \dfrac{x_{i}}{n}
+% \end{align*}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Error absoluto}
+% Para obtener el valor absoluto de una medición, se requiere comparar la diferencia de una magnitud que consideraremos como la \enquote{exacta} y cada una de las mediciones que se tienen:
+% \pause
+% \begin{align*}
+% \text{error absoluto} = \abs{\text{valor}_{\text{exacto}} - x_{i}}
+% \end{align*}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Del error absoluto}
+% El error absoluto, nos devuelve un valor de la diferencia, pero como tal, no sabemos qué tanta es esa diferencia.
+% \\
+% \bigskip
+% \pause
+% Para ello se utiliza el error relativo o el error porcentual.
+% \end{frame}
+% \begin{frame}
+% \frametitle{Error relativo}
+% Para obtener el valor relativo de una medición, tomamos el error absoluto y se divide entre el valor que se considera como \enquote{exacto}:
+% \pause
+% \begin{align*}
+% \text{error relativo} = \dfrac{\abs{\text{valor}_{\text{exacto}} - x_{i}}}{\text{valor}_{\text{exacto}}}
+% \end{align*}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Error porcentual}
+% Es el valor del error relativo expresado en $\%$, para ello, se multiplica por $100\%$:
+% \pause
+% \begin{align*}
+% \text{error porcentual} = \dfrac{\abs{\text{valor}_{\text{exacto}} - x_{i}}}{\text{valor}_{\text{exacto}}} \times 100 \%
+% \end{align*}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Desviación media}
+% Consideramos la desviación media como el valor absoluto de la diferencia entre el promedio de un conjunto de datos y cada uno de los datos.
+% \pause
+% \begin{align*}
+% \text{desviación media} = \abs{\bar{x} - x_{i}}
+% \end{align*}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Solución al problema 1}
+% Como el enunciado no indica qué valor se debe de considerar como el valor \enquote{exacto}, tenemos la libertad de elegir ese valor, a partir de nuestro criterio:
+% \pause
+% \setbeamercolor{item projected}{bg=cerise,fg=white}
+% \setbeamertemplate{enumerate items}{%
+% \usebeamercolor[bg]{item projected}%
+% \raisebox{1.5pt}{\colorbox{bg}{\color{fg}\footnotesize\insertenumlabel}}%
+% }
+% \begin{enumerate}[<+->]
+% \item El valor más bajo.
+% \item El valor más alto.
+% \item El valor promedio.
+% \end{enumerate}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Calculando el valor promedio}
+% Ocupando la expresión que indicamos para el valor promedio $\bar{x}$, tendremos que:
+% \pause
+% \begin{eqnarray*}
+% \begin{aligned}
+% \bar{x} &= \nsum_{i=1}^{n} \dfrac{x_{i}}{n} = \pause \dfrac{8.90 + 8.92 + 8.88 + \ldots + 8.89}{7} = \\[0.5em] \pause
+% &= \dfrac{62.22}{7} = \\[0.5em] \pause
+% &= 8.888
+% \end{aligned}
+% \end{eqnarray*}
+% \pause
+% Usaremos este valor como el \enquote{exacto} para calcular los errores.
+% \end{frame}
+% \begin{frame}
+% \frametitle{Error absoluto}
+% \begin{align*}
+% \text{error absoluto} = \abs{8.88 - x_{i}}
+% \end{align*}
+% \pause
+% \begin{table}
+% \renewcommand{\arraystretch}{0.8}
+% \centering
+% \begin{tabular}{| c | c |} \hline
+% Mediciones en $\unit{\meter}$ & Error absoluto\\ \hline
+% $8.90$ & $0.02$ \\ \hline
+% $8.92$ & $0.04$ \\ \hline
+% $8.88$ & $0$ \\ \hline
+% $8.79$ & $0.09$ \\ \hline
+% $8.91$ & $0.03$ \\ \hline
+% $8.93$ & $0.05$ \\ \hline
+% $8.89$ & $0.01$ \\ \hline
+% \end{tabular}
+% \end{table}    
+% \end{frame}
+% \begin{frame}
+% \frametitle{Error relativo}
+% \begin{align*}
+% \text{error relativo} = \dfrac{\abs{8.88 - x_{i}}}{8.88}
+% \end{align*}
+% \pause
+% \begin{table}
+% \renewcommand{\arraystretch}{0.8}
+% \centering
+% \begin{tabular}{| c | c | c |} \hline
+% Mediciones en $\unit{\meter}$ & Error absoluto & Error relativo\\ \hline
+% $8.90$ & $0.02$ & $0.00225$ \\ \hline
+% $8.92$ & $0.04$ & $0.00450$\\ \hline
+% $8.88$ & $0$ & $0$ \\ \hline
+% $8.79$ & $0.09$ & $0.01013$ \\ \hline
+% $8.91$ & $0.03$ & $0.00337$ \\ \hline
+% $8.93$ & $0.05$ & $0.00563$ \\ \hline
+% $8.89$ & $0.01$ & $0.00112$ \\ \hline
+% \end{tabular}
+% \end{table}    
+% \end{frame}
+% \begin{frame}
+% \frametitle{Error porcentual}
+% \begin{align*}
+% \text{error porcentual} = \dfrac{\abs{8.88 - x_{i}}}{8.88} \times 100 \%
+% \end{align*}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Error porcentual}
+% \begin{table}
+% \renewcommand{\arraystretch}{0.8}
+% \centering
+% \begin{tabular}{| p{2cm} | p{2cm} | p{2cm} | p{2cm} |} \hline
+% \multicolumn{1}{|p{2cm}|}{\centering Mediciones \\ en $\unit{\meter}$} & \multicolumn{1}{|p{2cm}|}{\centering Error \\ absoluto} & \multicolumn{1}{|p{2cm}|}{\centering Error \\ relativo} & \multicolumn{1}{|p{2cm}|}{\centering Error \\ porcentual} \\ \hline
+% $8.90$ & $0.02$ & $0.00225$ & $0.225 \%$ \\ \hline
+% $8.92$ & $0.04$ & $0.00450$ & $0.455 \%$ \\ \hline
+% $8.88$ & $0$ & $0$ & $0.0 \%$  \\ \hline
+% $8.79$ & $0.09$ & $0.01013$ & $1.013 \%$  \\ \hline
+% $8.91$ & $0.03$ & $0.00337$ & $0.337 \%$  \\ \hline
+% $8.93$ & $0.05$ & $0.00563$ & $0.563 \%$  \\ \hline
+% $8.89$ & $0.01$ & $0.00112$ & $0.112 \%$  \\ \hline
+% \end{tabular}
+% \end{table}    
+% \end{frame}
+% \begin{frame}
+% \frametitle{Desviación media}
+% \begin{align*}
+% \text{desviación media} = \abs{8.88 - x_{i}}
+% \end{align*}    
+% \end{frame}
+% \begin{frame}
+% \frametitle{Desviación media}
+% \begin{table}
+% \renewcommand{\arraystretch}{0.8}
+% \centering
+% \begin{tabular}{| p{2cm} | p{2cm} | } \hline
+% \multicolumn{1}{|p{2cm}|}{\centering Mediciones \\ en $\unit{\meter}$} & \multicolumn{1}{|p{2cm}|}{\centering Desviación \\ media} \\ \hline
+% $8.90$ & $0.02$ \\ \hline
+% $8.92$ & $0.04$ \\ \hline
+% $8.88$ & $0$ \\ \hline
+% $8.79$ & $0.09$ \\ \hline
+% $8.91$ & $0.03$ \\ \hline
+% $8.93$ & $0.05$ \\ \hline
+% $8.89$ & $0.01$ \\ \hline
+% \end{tabular}
+% \end{table}    
+% \end{frame}    
+% \begin{frame}
+% \frametitle{Caso de la desviación media}
+% En estadística se acostumbra reportar la desviación media del conjunto de datos, como medida de dispersión.
+% \\
+% \bigskip
+% \pause
+% Se utiliza la expresión:
+% \begin{align*}
+% \text{desviación media} = \dfrac{\displaystyle \nsum_{i=1}^{n} \abs{\bar{x} - x_{i}}}{n} 
+% \end{align*}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Reportando la desviación media}
+% En el caso del ejercicio 1, se tiene que:
+% \pause
+% \begin{eqnarray*}
+% \begin{aligned}
+% \text{desviación media} &= \dfrac{\displaystyle \nsum_{i=1}^{n} \abs{\bar{x} - x_{i}}}{n} = \\[0.5em] \pause
+% &= \dfrac{0.02 + 0.04 + \ldots + 0.01}{7} = \\[0.5em] \pause
+% &= \dfrac{0.24}{7} = \\[0.5em] \pause
+% &= \SI{0.0342}{\meter}
+% \end{aligned}
+% \end{eqnarray*}
+% \end{frame}
+
+
+% \section{Vectores}
+% \frame{\tableofcontents[currentsection, hideothersubsections]}
+% \subsection{Definición}
+
+% \begin{frame}
+% \frametitle{¿Qué es un vector?}
+% Los vectores se definen como expresiones matemáticas que poseen magnitud, dirección y sentido.
+% \\
+% \bigskip
+% \pause
+% Los vectores se representan por flechas en las ilustraciones, normalmente se distinguen de las cantidades escalares mediante el uso de negritas ($\vb{P}$).
+% \end{frame}
+% \begin{frame}
+% \frametitle{Varios vectores}
+% \begin{figure}
+%     \centering
+%     \begin{tikzpicture}
+%         \draw [-stealth, thick] (0, 0) -- (3, 2) node [midway, above] {$\va{P}$};
+%         \draw (0, 0) -- (2, 0);
+%         \draw (0.5, 0) arc(0:30:0.6);
+%         \node at (0.8, 0.2) {$\theta$};
+
+%         \draw [stealth-, thick] (7, 1) -- (9, 1) node [midway, above] {$\va{A}$};
+%     \end{tikzpicture}
+% \end{figure}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Escribiendo vectores}
+% En la escritura a mano, un vector puede caracterizarse dibujando una pequeña flecha arriba de la letra usada para representarlo ($\va{P}$).
+% \\
+% \bigskip
+% \pause
+% La magnitud de un vector determina la longitud de la flecha correspondiente.
+% \end{frame}
+% \begin{frame}
+% \frametitle{Definiendo un vector}
+% \begin{figure}
+%     \centering
+%     \begin{tikzpicture}
+%         \draw [-stealth, thick] (0, 0) -- (3, 3) node [midway, above] {$\va{P}$};
+%         \draw [dashed] (-1, -1) -- (4, 4); 
+%         \draw (0, 0) -- (2, 0);
+%         \draw (0.5, 0) arc(0:30:0.8);
+%         \node at (0.8, 0.2) {$\theta$};
+%         \node at (5, 4) {Línea de acción};
+%     \end{tikzpicture}
+% \end{figure}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Dirección de un vector}
+% La dirección de un vector representa el ángulo de inclinación con respecto a una línea horizontal medidad en el sentido antihorario.
+% \pause
+% \begin{figure}
+%     \centering
+%     \begin{tikzpicture}
+%         \draw [-stealth, thick] (0, 0) -- (2, 2) node [midway, above] {$\va{A}$};
+%         \draw [dashed] (-0.5, -0.5) -- (2.5, 2.5); 
+%         \draw (0, 0) -- (2, 0);
+%         \draw (0.5, 0) arc(0:45:0.5);
+%         \node at (1.5, 0.2) {$\theta = \ang{45}$};
+        
+%         \pause
+        
+%         \draw [-stealth, thick] (6, 0) -- (4, 2) node [midway, above] {$\va{B}$};
+%         \draw [dashed] (7, -1) -- (3, 3); 
+%         \draw (6, 0) -- (8.5, 0);
+%         \draw (6.5, 0) arc(0:135:0.55);
+%         \node at (7.5, 0.2) {$\theta = \ang{135}$};
+%     \end{tikzpicture}
+% \end{figure}
+% \end{frame}
+
+% \subsection{Tipos de vectores}
+
+% \begin{frame}
+% \frametitle{Vectores colineales}
+% Son aquellos que están contenidos en una misma línea de acción.
+% \pause
+% \begin{figure}
+%     \centering
+%     \begin{tikzpicture}
+%         \draw [dashed] (0, 0) -- (10, 0);
+%         \draw [-stealth, thick] (1, 0) -- (2, 0) node [above, midway] {$\va{A}$};
+%         \draw [stealth-, thick] (4, 0) -- (5, 0) node [above, midway] {$\va{B}$};
+%         \draw [-stealth, thick] (7, 0) -- (8, 0) node [above, midway] {$\va{C}$};
+%     \end{tikzpicture}
+% \end{figure}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Vectores concurrentes}
+% Son aquellos cuyas líneas de acción se cortan en un mismo punto.
+% \pause
+% \begin{figure}
+%     \centering
+%     \begin{tikzpicture}
+%         \draw [dashed] (0, 0) -- (6, 0);
+%         \draw [-stealth, thick] (1, 0) -- (2, 0) node [above, midway] {$\va{A}$};
+%         \draw [stealth-, thick] (5, 0) -- (6, 0) node [above, midway] {$\va{B}$};
+        
+%         \draw [dashed] (3, 3) -- (3, -2);
+%         \draw [-stealth, thick] (3, 3) -- (3, 2) node [left, midway] {$\va{C}$};
+%     \end{tikzpicture}
+% \end{figure}
+% \end{frame}
+% \begin{frame}
+% \frametitle{Vectores coplanares}
+% Son aquellos que se encuentran en un mismo plano:
+% \pause
+% \begin{figure}
+%     \centering
+%     \begin{tikzpicture}
+%         \draw[fill=aquamarine] (0, 0) rectangle (5, 3);
+%         \draw [-stealth, thick] (0.5, 1) -- (1.5, 1) node [above, midway] {$\va{a}$};
+%         \draw [-stealth, thick] (4, 2) -- (3, 1) node [above, midway] {$\va{b}$};
+%         \draw [-stealth, thick] (2.5, 1) -- (2.5, 2) node [left, midway] {$\va{c}$};
+%     \end{tikzpicture}
+% \end{figure}
+% \end{frame}
+
+\end{document}

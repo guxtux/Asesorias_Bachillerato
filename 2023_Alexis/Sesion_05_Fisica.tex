@@ -1,0 +1,469 @@
+\documentclass[12pt]{beamer}
+\usepackage{Estilos/BeamerFC}
+\usepackage{Estilos/ColoresLatex}
+\input{Preambulos/preambulo_Beamer_Warsaw_seahorse}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{section in foot}%
+    \usebeamerfont{section in foot} \insertsection
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{subsection in foot}%
+    \usebeamerfont{subsection in foot}  \insertsubsection
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot} \insertshortdate{} \hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber \hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
+
+\setbeamertemplate{navigation symbols}{}
+\date{23 de marzo}
+
+\title{Sesión 5. Física}
+\subtitle{Asesoría}
+
+\begin{document}
+
+\maketitle
+\fontsize{14}{14}\selectfont
+\spanishdecimal{.}
+
+\section*{Contenido}
+\frame[allowframebreaks]{\tableofcontents[currentsection, hideallsubsections]}
+
+
+\section{Resolviendo el Ejercicio 2}
+\frame{\tableofcontents[currentsection, hideothersubsections]}
+\subsection{El problema a resolver}
+
+\begin{frame}
+\frametitle{Enunciado del Ejercicio 2}
+En una persecución policial, el automóvil en fuga inicia con los siguientes desplazamientos:
+\setbeamercolor{item projected}{bg=lava,fg=white}
+\setbeamertemplate{enumerate items}{%
+\usebeamercolor[bg]{item projected}%
+\raisebox{1.5pt}{\colorbox{bg}{\color{fg}\footnotesize\insertenumlabel}}%
+}
+\begin{enumerate}[<+->]
+\item $d_{1} = \SI{120}{\meter}, \theta = \ang{10}$
+\item $d_{2} = \SI{900}{\meter}, \theta = \ang{100}$
+\item $d_{3} = \SI{700}{\meter}, \theta = \ang{200}$
+\item $d_{4} = \SI{500}{\meter}, \theta = \ang{300}$
+\end{enumerate}
+\end{frame}
+\begin{frame}
+\frametitle{Enunciado del Ejercicio 2}
+Si una patrulla está en la posición donde inició el automóvil la fuga.
+\\
+\bigskip
+\pause
+¿Cuál es el desplazamiento que tiene que realizar la patrulla par encontrarse con el automóvil que se dio a la fuga?
+\\
+\bigskip
+\pause
+Determina el valor del desplazamiento resultante, con respecto al eje $x$ positivo.
+\end{frame}
+\begin{frame}
+\frametitle{Método gráfico}
+Nuevamente ocupamos el método gráfico para encontrar el vector resultante.
+\\
+\bigskip
+\pause
+A continuación se revisan los desplazamientos del automóvil en fuga.
+\end{frame}
+\begin{frame}[plain]
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[scale=0.8]
+        % \draw[thin, gray!40] (-7, 0) grid (5, 9);
+        \draw [-stealth, thick] (0, 0) -- (1.181, 0.208) node [above, near end] {$d_{1}$};
+        \draw (0, 0) -- (1, 0);
+        \draw (0.5, 0) arc(0:10:0.4);
+        \node at (1.5, -0.3) {$\theta_{1} = \ang{10}$};
+        \pause
+        \draw [-stealth, thick] (1.181, 0.208) -- (-0.381, 9.071) node [right, midway] {$d_{2}$};
+        \draw (1.181, 0.208) -- (2.181, 0.208);
+        \draw (1.681, 0.208) arc(0:100:0.5);
+        \node at (3.1, 0.5) {$\theta_{2} = \ang{100}$};
+        \pause
+        \draw [-stealth, thick] (-0.381, 9.071) -- (-6.958, 6.677) node [above, midway] {$d_{3}$};
+        \draw (-0.381, 9.071) -- (0.6, 9.071);
+        \draw (0.3, 9.071) arc(0:200:0.5);
+        \node at (1.4, 9.5) {$\theta_{3} = \ang{200}$};
+        \pause
+        \draw [-stealth, thick] (-6.958, 6.677) -- (-2.655, 4.177) node [above, midway] {$d_{4}$};
+        \draw (-6.958, 6.677) -- (-5.958, 6.677);
+        \draw (-6.3, 6.677) arc(0:300:0.4);
+        \node at (-6.5, 7.8) {$\theta_{4} = \ang{300}$};
+        \pause
+        \draw [-stealth, thick, color=blue] (0, 0) -- (-2.655, 4.177) node [below, midway] {$d_{R}$};
+        \pause
+        \draw [thick, color=blue] (0.4, 0) arc(0:130:0.38);
+        \node at (-1, 0.3) [color=blue] {$\theta_{R}$};
+    \end{tikzpicture}
+\end{figure}
+\end{frame}
+\begin{frame}
+\frametitle{Solución analítica}
+Repetimos el procedimiento para obtener la solución analítica mediante la suma de las componentes de cada vector en las direcciones $x$ e $y$.
+\end{frame}
+\begin{frame}
+\frametitle{Simplificando el problema}
+Para resolver de manera más ágil el ejercicio, \pause a partir del ángulo del vector que se indica, identificamos el cuadrante al que pertenece.
+\\
+\bigskip
+\pause
+De esta manera tendremos las correspondientes expresiones para calcular las componentes de cada uno de ellos tanto en la dirección $x$ como en $y$.
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{1}$}
+Como $\theta_{1} = \ang{10} < \ang{90}$
+el vector $d_{1}$ se encuentra en el cuadrante I.
+\\
+\bigskip
+\pause
+Por lo tanto:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+d_{1x} &= \cos \theta_{1} \cdot d_{1} \pause = \cos \ang{10} \, \cdot \SI{120}{\meter} = \pause \SI{118.17}{\meter} \\[0.5em] \pause
+d_{1y} &= \sin \theta_{1} \cdot d_{1} \pause =\sin \ang{10} \, \cdot \SI{120}{\meter} = \pause \SI{20.83}{\meter}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{2}$}
+Para el vector $d_{2}$ revisamos que el ángulo:
+\pause
+\begin{eqnarray*}
+\ang{90} < \theta_{2} = \ang{100} < \ang{180}
+\end{eqnarray*}
+\pause
+por lo que el vector $d_{2}$ se encuentra en el cuadrante II.
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{2}$}
+Tenemos que ocupar un ángulo auxiliar $\alpha$, que es el ángulo suplementario, es decir:
+\pause
+\begin{align*}
+\theta = \ang{180} - \alpha
+\end{align*}
+\pause
+Siendo entonces:
+\pause
+\begin{eqnarray*}
+\alpha = \ang{180} - \ang{100} = \pause \ang{80}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{2}$}
+Entonces las componentes del vector $d_{2}$ son:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+d_{2x} &= -\cos \alpha \cdot d_{2} \pause = -\cos \ang{80} \, \cdot \SI{900}{\meter} = \pause -\SI{156.28}{\meter} \\[0.5em] \pause
+d_{2y} &= \sin \alpha \cdot d_{2} \pause = \sin \ang{80} \, \cdot \SI{900}{\meter} = \pause \SI{886.32}{\meter}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{3}$}
+Para el vector $d_{3}$ vemos que el ángulo:
+\pause
+\begin{eqnarray*}
+\ang{180} < \theta_{3} = \ang{200} < \ang{270}
+\end{eqnarray*}
+\pause
+por lo que el vector $d_{3}$ se encuentra en el cuadrante III.
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{3}$}
+Nuevamente tenemos que ocupar un ángulo auxiliar $\beta$, que es el ángulo complementario en el cuadrante III, es decir:
+\pause
+\begin{align*}
+\theta = \ang{270} - \beta
+\end{align*}
+\pause
+Siendo entonces:
+\pause
+\begin{eqnarray*}
+\beta = \ang{270} - \ang{200} = \pause \ang{70}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{3}$}
+Entonces las componentes del vector $d_{3}$ son:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+d_{3x} &= -\sin \beta \cdot d_{3} \pause = -\sin \ang{70} \, \cdot \SI{700}{\meter} = \pause -\SI{657.78}{\meter} \\[0.5em] \pause
+d_{3y} &= -\cos \beta \cdot d_{3} \pause = -\cos \ang{70} \, \cdot \SI{700}{\meter} = \pause -\SI{239.41}{\meter}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{4}$}
+Para el último vector $d_{4}$ vemos que el ángulo:
+\pause
+\begin{eqnarray*}
+\ang{270} < \theta_{4} = \ang{300} < \ang{360}
+\end{eqnarray*}
+\pause
+por lo que el vector $d_{4}$ se encuentra en el cuadrante IV.
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{4}$}
+Nuevamente tenemos que ocupar un ángulo auxiliar $\psi$, que es el ángulo suplementario en el cuadrante IV, es decir:
+\pause
+\begin{align*}
+\theta = \ang{360} - \psi
+\end{align*}
+\pause
+Siendo entonces:
+\pause
+\begin{eqnarray*}
+\psi = \ang{360} - \ang{300} = \pause \ang{60}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{4}$}
+Entonces las componentes del vector $d_{4}$ son:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+d_{4x} &= \cos \psi \cdot d_{4} \pause = \cos \ang{60} \, \cdot \SI{500}{\meter} = \pause \SI{250}{\meter} \\[0.5em] \pause
+d_{4y} &= -\sin \psi \cdot d_{4} \pause = - \sin \ang{60} \, \cdot \SI{500}{\meter} = \pause = -\SI{433.01}{\meter}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Sumando las componentes}
+Una vez que ya hemos calculado las componentes en de los vectores en las direcciones $x$, $y$, ahora pasamos a sumar el valor de cada una de ellas para obtener las componentes del vector resultante.
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector resultante}
+Para la componente $d_{Rx}$ se tiene entonces que:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+d_{Rx} &= \nsum_{n=1}^{4} d_{ix} = \pause d_{1x} + d_{2x} + d_{3x} + d_{4x} = \\[0.5em] \pause
+&= \SI{118.17}{\meter} {+} (-\SI{156.28}{\meter}) {+} (-\SI{657.78}{\meter}) {+} \SI{250}{\meter} = \\[0.5em] \pause
+&= -\SI{445.89}{\meter}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector resultante}
+Ahora para la componente $d_{Ry}$ se tiene que:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+d_{Ry} &= \nsum_{n=1}^{4} d_{iy} = \pause d_{1y} + d_{2y} + d_{3y} + d_{4y} = \\[0.5em] \pause
+&= \SI{20.83}{\meter} {+} \SI{886.32}{\meter} {+} (-\SI{239.41}{\meter}) {+} (-\SI{433.01}{\meter}) = \\[0.5em] \pause
+&= \SI{234.73}{\meter}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Magnitude del vector resultante}
+Una vez obtenidas las componentes del vector resultante, podemos obtener su magnitud:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+\abs{d_{R}} &= \sqrt{ (d_{Rx})^{2} + (d_{Ry})^{2} } = \\[0.5em] \pause
+&= \sqrt{(-\SI{445.89}{\meter})^{2} + (\SI{234.73}{\meter})^{2}} = \\[0.5em] \pause
+&= \sqrt{ \SI{198817.89}{\square\meter} + \SI{55098.17}{\square\meter} } = \\[0.5em] \pause
+&= \sqrt{\SI{253916.06}{\square\meter}} = \\[0.5em] \pause
+&= \SI{503.90}{\meter}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{El ángulo del vector resultante}
+De los valores de las componentes $d_{Rx}$, $d_{Ry}$ podemos reconocer el cuadrante en el que se encuentra el vector $d_{R}$:
+\pause
+\begin{align*}
+d_{Rx} &= -\SI{445.89}{\meter} \\[0.5em]
+d_{Ry} &=  \SI{234.73}{\meter}
+\end{align*}
+\pause
+Entonces, el vector resultante está en el cuadrante II.
+\end{frame}
+\begin{frame}
+\frametitle{El ángulo del vector resultante}
+Ocuparemos un ángulo auxiliar $\alpha$, de tal manera que:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+\tan \alpha &= - \dfrac{d_{Ry}}{d_{Rx}} = \\[0.5em] \pause
+\tan \alpha &= - \dfrac{\SI{445.89}{\meter}}{\SI{234.73}{\meter}} = \\[0.5em] \pause
+\tan \alpha &= - 1.8995
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{El ángulo del vector resultante}
+Pero como queremos el valor del ángulo, ocupamos la función inversa, el arco tangente:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+\arctan(\tan \alpha) &= \arctan(-1.8995) = \\[0.5em] \pause
+\alpha &= -\ang{62.23}
+\end{aligned}
+\end{eqnarray*}
+\pause
+El signo negativo nos indica que se está midiendo desde el eje $x$ negativo, en el sentido horario del reloj.
+\end{frame}
+\begin{frame}
+\frametitle{El ángulo del vector resultante}
+Como sabemos que $\alpha$ es ángulo suplementario, entonces ocupamos su valor positivo:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+\theta_{R} &= \ang{180} - \alpha = \pause \ang{180} - \ang{62.23} = \\[0.5em] \pause
+\theta_{R} &= \ang{117.77}
+\end{aligned}
+\end{eqnarray*}
+\pause
+De esta manera se ha resuelto el ejercicio 2 de la guía.
+\end{frame}
+
+\section{Ejercicios}
+\frame{\tableofcontents[currentsection, hideothersubsections]}
+\subsection{Ejercicio 1}
+
+\begin{frame}
+\frametitle{Enunciado del Ejercicio 1}
+Del siguiente sistema de vectores determina por el método analítico el valor de la resultante y el ángulo que forma con respecto al eje $x$ positivo.
+\end{frame}
+\begin{frame}[plain]
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.8]
+    \draw (-4, 0) -- (9, 0);
+    \draw (0, -4) -- (0, 6);
+    \draw [-stealth, thick, color=blue] (0, 0) -- (8, 0) node [below, midway] {$\va{F}_{1} = \SI{8}{\newton}$};
+    \draw [-stealth, thick, color=blue] (0, 0) -- (4.59, 3.85) node [above, midway, rotate=40] {$\va{F}_{2} = \SI{6}{\newton}$};
+    \draw [color=blue] (0.5, 0) arc(0:40:0.5);
+    \node [color=blue] at (2, 0.3) {$\theta_{2} = \ang{40}$};
+    \draw [-stealth, thick, color=blue] (0, 0) -- (-2.59, -1.5) node [below, midway, rotate=30] {$\va{F}_{3} = \SI{3}{\newton}$};
+    \draw [color=blue] (-0.5, 0) arc(180:210:0.5);
+    \node [color=blue] at (-2,- 0.3) {$\theta_{3} = \ang{30}$};
+    \draw [-stealth, thick, color=blue] (0, 0) -- (0, 5) node [left, midway] {$\va{F}_{4} = \SI{5}{\newton}$};
+\end{tikzpicture}
+\end{figure}
+\end{frame}
+\begin{frame}
+\frametitle{Recomendación para la solución}
+Es conveniente enlistar los vectores involucrados de tal manera que tengamos tanto la magnitud como el ángulo que establece su dirección.
+\end{frame}
+\begin{frame}
+\frametitle{Lista de vectores}
+\begin{table}
+\centering
+\begin{tabular}{c | c | c }
+Vector & Magnitud (en $\unit{\newton}$) & Ángulo \\ \hline
+$\va{F}_{1}$ & $8$ & $\theta_{1} = \ang{0}$ \\ \hline
+$\va{F}_{2}$ & $6$ & $\theta_{2} = \ang{40}$ \\ \hline
+$\va{F}_{3}$ & $3$ & $\theta_{3} = \ang{30}$ \\ \hline
+$\va{F}_{4}$ & $5$ & $\theta_{4} = \ang{90}$ \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+\begin{frame}
+\frametitle{Calculando las componentes}
+Una vez que tenemos la lista de vectores, iniciamos el cálculo de las componentes en las direcciones $x$ e $y$ de cada uno de ellos.
+\\
+\bigskip
+\pause
+Siendo recomendable también hacer una tabla con las componentes.
+\end{frame}
+\begin{frame}
+\frametitle{Tabla con las componentes}
+\begin{table}
+\centering
+\begin{tabular}{c | l | l | c}
+Componente & Expresión & Sustitución & Valor \\ \hline
+$F_{1x}$ & $\cos \theta_{1} \cdot F_{1}$ & $\cos \ang{0} \cdot \SI{8}{\newton}$ & $\SI{8}{\newton}$ \\ \hline
+$F_{1y}$ & $\sin \theta_{1} \cdot F_{1}$ & $\sin \ang{0} \cdot \SI{8}{\newton}$ & $\SI{0}{\newton}$ \\ \hline
+$F_{2x}$ & $\cos \theta_{2} \cdot F_{2}$ & $\cos \ang{40} \cdot \SI{6}{\newton}$ & $\SI{4.59}{\newton}$ \\ \hline
+$F_{2y}$ & $\sin \theta_{2} \cdot F_{2}$ & $\sin \ang{40} \cdot \SI{6}{\newton}$ & $\SI{3.85}{\newton}$ \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+\begin{frame}
+\frametitle{Tabla con las componentes}
+\begin{table}
+\centering
+\begin{tabular}{c | l | l | c}
+Componente & Expresión & Sustitución & Valor \\ \hline
+$F_{3x}$ & $-\cos \theta_{3} \cdot F_{3}$ & $-\cos \ang{30} \cdot \SI{3}{\newton}$ & $-\SI{2.59}{\newton}$ \\ \hline
+$F_{3y}$ & $-\sin \theta_{3} \cdot F_{3}$ & $-\sin \ang{30} \cdot \SI{3}{\newton}$ & $-\SI{1.5}{\newton}$ \\ \hline
+$F_{4x}$ & $\cos \theta_{4} \cdot F_{4}$ & $\cos \ang{90} \cdot \SI{5}{\newton}$ & $\SI{0}{\newton}$ \\ \hline
+$F_{4y}$ & $\sin \theta_{4} \cdot F_{4}$ & $\sin \ang{90} \cdot \SI{5}{\newton}$ & $\SI{5}{\newton}$ \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+\begin{frame}
+\frametitle{Recuperando las componentes del vector resultante}
+Ahora ya podemos calcular las componentes del vector resultante, \pause recordemos que:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+F_{Rx} &= \nsum_{i=1}^{4} F_{ix} = \\[0.5em] \pause
+&= F_{1x} + F_{2x} + F_{3x} + F_{4x} = \\[0.5em] \pause
+&= \SI{8}{\newton} {+} \SI{4.59}{\newton} {+} (-\SI{2.59}{\newton}) {+} \SI{0}{\newton} = \\[0.5em] \pause
+&= \SI{9.69}{\newton}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Recuperando las componentes del vector resultante}
+Para la componente $F_{Ry}$:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+F_{Ry} &= \nsum_{i=1}^{4} F_{iy} = \\[0.5em] \pause
+&= F_{1y} + F_{2y} + F_{3y} + F_{4y} = \\[0.5em] \pause
+&= \SI{0}{\newton} {+} \SI{3.85}{\newton} {+} (-\SI{1.5}{\newton}) {+} \SI{5}{\newton} = \\[0.5em] \pause
+&= \SI{7.35}{\newton}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Magnitud del vector resultante}
+Una vez obtenidas las componentes en $x$ e $y$, calculamos la magnitud del vector resultante:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+\abs{F_{R}} &= \sqrt{(F_{Rx})^{2} + (F_{Ry})^{2}} = \\[0.5em] \pause
+&= \sqrt{(\SI{9.69}{\newton})^{2} + (\SI{7.35}{\newton})^{2}} = \\[0.5em] \pause
+&= \sqrt{\SI{93.89}{\square\newton} + \SI{54.02}{\square\newton}} = \\[0.5em] \pause
+&= \sqrt{\SI{147.91}{\square\newton}} = \\[0.5em] \pause
+&= \SI{12.16}{\newton}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{El ángulo del vector resultante}
+Tenemos que $F_{Rx} > 0$ y $F_{Ry} > 0$, por lo que el vector resultante está en el cuadrante I, \pause con esos valores podemos calcular el valor del ángulo del vector resultante:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+\tan \theta_{R} &= \dfrac{F_{Ry}}{F_{Rx}} = \pause
+ \dfrac{\SI{7.35}{\newton}}{\SI{9.69}{\newton}} = \pause  0.7585 \\[0.5em] \pause
+\arctan(\tan \theta_{R}) &= \arctan(0.7585) \\[0.5em] \pause
+\theta_{R} &= \ang{37.18}
+\end{aligned}
+\end{eqnarray*}
+\end{frame}
+\end{document}
