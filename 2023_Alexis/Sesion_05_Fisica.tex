@@ -26,7 +26,7 @@
 \makeatother
 
 \setbeamertemplate{navigation symbols}{}
-\date{23 de marzo}
+\date{3 de abril}
 
 \title{Sesión 5. Física}
 \subtitle{Asesoría}
@@ -157,15 +157,41 @@ Tenemos que ocupar un ángulo auxiliar $\alpha$, que es el ángulo suplementario
 \begin{align*}
 \theta = \ang{180} - \alpha
 \end{align*}
-\pause
-Siendo entonces:
-\pause
+\begin{minipage}{0.6\linewidth}
+Por tanto:
 \begin{eqnarray*}
 \alpha = \ang{180} - \ang{100} = \pause \ang{80}
 \end{eqnarray*}
+\end{minipage}
+\begin{minipage}{0.35\linewidth}
+\begin{figure}
+\centering
+\begin{tikzpicture}
+  \draw (-1.5, 0) -- (0.75, 0);
+  \draw (0, -0.1) -- (0, 2);
+  \draw [-stealth, thick] (0, 0) -- (-0.347, 1.969) node [left, near end] {\small{$d_{2}$}};
+  \draw (0.5, 0) arc(0:100:0.5);
+  \node at (0.8, 0.7) {\small{$\theta = \ang{100}$}};
+  \draw [color=red] (-0.5, 0) arc(180:100:0.5);
+  \node at (-1.2, 0.3) [color=red] {\small{$\alpha = \ang{80}$}};
+\end{tikzpicture}
+\end{figure}
+\end{minipage}
 \end{frame}
 \begin{frame}
 \frametitle{Componentes del vector $d_{2}$}
+\begin{figure}
+\centering
+\begin{tikzpicture}
+  \draw (-0.5, 0) -- (0.1, 0);
+  \draw (0, -0.1) -- (0, 2);
+  \draw [-stealth, thick] (0, 0) -- (-0.347, 1.969) node [left, pos=1.05] {\small{$d_{2}$}};
+  \draw [color=red] (-0.2, 0) arc(180:100:0.2);
+  \node at (-2, 0.5) [color=red] {\small{$\alpha = \ang{80}$}};
+  \draw [thick, color=red] (0, 0) -- (-0.347, 0) node [below, midway] {\small{$d_{2x}$}};
+  \draw [thick, color=red] (-0.347, 0) -- (-0.347, 1.969) node [left, midway] {\small{$d_{2y}$}};
+\end{tikzpicture}
+\end{figure}
 Entonces las componentes del vector $d_{2}$ son:
 \pause
 \begin{eqnarray*}
@@ -192,15 +218,42 @@ Nuevamente tenemos que ocupar un ángulo auxiliar $\beta$, que es el ángulo com
 \begin{align*}
 \theta = \ang{270} - \beta
 \end{align*}
-\pause
-Siendo entonces:
-\pause
-\begin{eqnarray*}
-\beta = \ang{270} - \ang{200} = \pause \ang{70}
-\end{eqnarray*}
 \end{frame}
 \begin{frame}
 \frametitle{Componentes del vector $d_{3}$}
+\begin{eqnarray*}
+\beta = \ang{270} - \ang{200} = \pause \ang{70}
+\end{eqnarray*}
+\pause
+\vspace*{-1cm}
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.7]
+  \draw (-5, 0) -- (0.6, 0);
+  \draw (0, 0.1) -- (0, -2);
+  \draw [-stealth, thick] (0, 0) -- (-4.698, -1.71) node [above, near end] {\small{$d_{3}$}};
+  \draw (0.4, 0) arc(0:200:0.6);
+  \node at (0.8, 1) {\small{$\theta = \ang{200}$}};
+  \draw [color=red] (0, -0.6) arc(270:200:0.6);
+  \node at (1.3, -0.5) [color=red] {\small{$\beta = \ang{70}$}};
+\end{tikzpicture}
+\end{figure}
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{3}$}
+\begin{figure}
+  \centering
+\begin{tikzpicture}[scale=0.7]
+  \draw (-5, 0) -- (0.6, 0);
+  \draw (0, 0.1) -- (0, -2);
+  \draw [-stealth, thick] (0, 0) -- (-4.698, -1.71) node [above, near end] {\small{$d_{3}$}};
+  
+  \draw [color=red] (0, -0.6) arc(270:200:0.6);
+  \node at (-1.3, 0.5) [color=red] {\small{$\beta = \ang{70}$}};
+  \draw [color=red] (0, -1.71) -- (-4.698, -1.71) node [below, midway] {\small{$d_{3x}$}};
+  \draw [color=red] (0, 0) -- (0, -1.71) node [right, midway] {\small{$d_{3y}$}};
+\end{tikzpicture}
+\end{figure}
 Entonces las componentes del vector $d_{3}$ son:
 \pause
 \begin{eqnarray*}
@@ -222,20 +275,47 @@ por lo que el vector $d_{4}$ se encuentra en el cuadrante IV.
 \end{frame}
 \begin{frame}
 \frametitle{Componentes del vector $d_{4}$}
-Nuevamente tenemos que ocupar un ángulo auxiliar $\psi$, que es el ángulo suplementario en el cuadrante IV, es decir:
+Nuevamente tenemos que ocupar un ángulo auxiliar $\psi$, que es el ángulo suplementario en el cuadrante IV.
 \pause
 \begin{align*}
 \theta = \ang{360} - \psi
 \end{align*}
-\pause
+\end{frame}
+\begin{frame}
+\frametitle{Componentes del vector $d_{4}$}
 Siendo entonces:
 \pause
 \begin{eqnarray*}
 \psi = \ang{360} - \ang{300} = \pause \ang{60}
 \end{eqnarray*}
+\vspace*{-1cm}
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.7]
+  \draw (-1, 0) -- (3.5, 0);
+  \draw (0, 0.1) -- (0, -5);
+  \draw [-stealth, thick] (0, 0) -- (2.5, -4.33) node [right, near end] {\small{$d_{4}$}};
+  \draw (0.6, 0) arc(0:300:0.6);
+  \node at (0, 1) {\small{$\theta = \ang{300}$}};
+  \draw [color=red] (0.6, 0) arc(360:300:0.6);
+  \node at (1.7, -0.5) [color=red] {\small{$\psi = \ang{60}$}};
+\end{tikzpicture}
+\end{figure}
 \end{frame}
 \begin{frame}
 \frametitle{Componentes del vector $d_{4}$}
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[scale=0.7]
+  \draw (-1, 0) -- (3.5, 0);
+  \draw (0, 0.1) -- (0, -5);
+  \draw [-stealth, thick] (0, 0) -- (2.5, -4.33) node [left, midway] {\small{$d_{4}$}};
+  \draw [color=red] (0.6, 0) arc(360:300:0.6);
+  \node at (1.5, -0.5) [color=red] {\small{$\psi = \ang{60}$}};
+  \draw [color=red] (0, 0) -- (2.5, 0) node [above, midway] {\small{$d_4x$}};
+  \draw [color=red] (2.5, 0) -- (2.5, -4.33) node [right, midway] {\small{$d_4y$}};
+\end{tikzpicture}
+\end{figure}
 Entonces las componentes del vector $d_{4}$ son:
 \pause
 \begin{eqnarray*}
@@ -274,7 +354,7 @@ d_{Ry} &= \nsum_{n=1}^{4} d_{iy} = \pause d_{1y} + d_{2y} + d_{3y} + d_{4y} = \\
 \end{eqnarray*}
 \end{frame}
 \begin{frame}
-\frametitle{Magnitude del vector resultante}
+\frametitle{Magnitud del vector resultante}
 Una vez obtenidas las componentes del vector resultante, podemos obtener su magnitud:
 \pause
 \begin{eqnarray*}
@@ -289,26 +369,56 @@ Una vez obtenidas las componentes del vector resultante, podemos obtener su magn
 \end{frame}
 \begin{frame}
 \frametitle{El ángulo del vector resultante}
-De los valores de las componentes $d_{Rx}$, $d_{Ry}$ podemos reconocer el cuadrante en el que se encuentra el vector $d_{R}$:
+De los valores de las componentes $d_{Rx}$, $d_{Ry}$ podemos reconocer el vector resultante se encuentra en el cuadrante II:
+\\
 \pause
+\begin{minipage}{0.4\linewidth}
 \begin{align*}
 d_{Rx} &= -\SI{445.89}{\meter} \\[0.5em]
 d_{Ry} &=  \SI{234.73}{\meter}
 \end{align*}
-\pause
-Entonces, el vector resultante está en el cuadrante II.
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.35\linewidth}
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[scale=0.7]
+  \draw (-5, 0) -- (0.1, 0);
+  \draw (0, -0.1) -- (0, 2.5);
+  \draw [-stealth, thick, color=red] (0, 0) -- (-4.45, 0) node [below, midway] {\small{$d_{Rx}$}};
+  \draw [-stealth, thick, color=red] (-4.45, 0) -- (-4.45, 2.34) node [left, midway] {\small{$d_{Ry}$}};
+  \draw [-stealth, thick, color=red] (0, 0) -- (-4.45, 2.34) node [above, midway] {\small{$d_{R}$}};
+  \end{tikzpicture}
+  \end{figure}
+\end{minipage}
 \end{frame}
 \begin{frame}
 \frametitle{El ángulo del vector resultante}
+\begin{minipage}{0.35\linewidth}
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.7]
+  \draw (-5, 0) -- (0.1, 0);
+  \draw (0, -0.1) -- (0, 2.5);
+  \draw [-stealth, thick, color=red] (0, 0) -- (-4.45, 0) node [below, midway] {\small{$d_{Rx}$}};
+  \draw [-stealth, thick, color=red] (-4.45, 0) -- (-4.45, 2.34) node [left, midway] {\small{$d_{Ry}$}};
+  \draw [-stealth, thick, color=red] (0, 0) -- (-4.45, 2.34) node [above, midway] {\small{$d_{R}$}};
+  \draw [color=red] (-1, 0) arc(180:117:0.5);
+  \node at (-1.7, 0.3) [color=red] {\small{$\alpha$}};
+\end{tikzpicture}
+\end{figure}
+\end{minipage}
+\hspace{0.25cm}
+\begin{minipage}{0.6\linewidth}
 Ocuparemos un ángulo auxiliar $\alpha$, de tal manera que:
-\pause
 \begin{eqnarray*}
 \begin{aligned}
 \tan \alpha &= - \dfrac{d_{Ry}}{d_{Rx}} = \\[0.5em] \pause
-\tan \alpha &= - \dfrac{\SI{445.89}{\meter}}{\SI{234.73}{\meter}} = \\[0.5em] \pause
-\tan \alpha &= - 1.8995
+\tan \alpha &= - \dfrac{\SI{234.73}{\meter}}{\SI{445.89}{\meter}} = \\[0.5em] \pause
+\tan \alpha &= - 0.5264
 \end{aligned}
 \end{eqnarray*}
+\end{minipage}
 \end{frame}
 \begin{frame}
 \frametitle{El ángulo del vector resultante}
@@ -316,8 +426,8 @@ Pero como queremos el valor del ángulo, ocupamos la función inversa, el arco t
 \pause
 \begin{eqnarray*}
 \begin{aligned}
-\arctan(\tan \alpha) &= \arctan(-1.8995) = \\[0.5em] \pause
-\alpha &= -\ang{62.23}
+\arctan(\tan \alpha) &= \arctan(-0.5264) = \\[0.5em] \pause
+\alpha &= -\ang{27.63}
 \end{aligned}
 \end{eqnarray*}
 \pause
@@ -327,143 +437,286 @@ El signo negativo nos indica que se está midiendo desde el eje $x$ negativo, en
 \frametitle{El ángulo del vector resultante}
 Como sabemos que $\alpha$ es ángulo suplementario, entonces ocupamos su valor positivo:
 \pause
+\begin{minipage}{0.5\linewidth}
 \begin{eqnarray*}
 \begin{aligned}
-\theta_{R} &= \ang{180} - \alpha = \pause \ang{180} - \ang{62.23} = \\[0.5em] \pause
-\theta_{R} &= \ang{117.77}
+\theta_{R} &= \ang{180} - \alpha = \\[0.5em] \pause
+&= \ang{180} - \ang{27.63} = \\[0.5em] \pause
+\theta_{R} &= \ang{152.37}
 \end{aligned}
 \end{eqnarray*}
-\pause
-De esta manera se ha resuelto el ejercicio 2 de la guía.
+\end{minipage}
+\begin{minipage}{0.35\linewidth}
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.7]
+  \draw (-5, 0) -- (0.9, 0);
+  \draw (0, -0.1) -- (0, 2.5);
+  \draw [-stealth, thick, color=red] (0, 0) -- (-4.45, 0) node [below, midway] {\small{$d_{Rx}$}};
+  \draw [-stealth, thick, color=red] (-4.45, 0) -- (-4.45, 2.34) node [left, midway] {\small{$d_{Ry}$}};
+  \draw [-stealth, thick, color=red] (0, 0) -- (-4.45, 2.34) node [above, midway] {\small{$d_{R}$}};
+  \draw [color=red] (-0.5, 0) arc(180:152:0.5);
+  \node at (-1.5, 0.3) [color=red] {\small{$\alpha$}};
+  \draw (0.5, 0) arc(0:152:0.5);
+  \node at (1.1, 0.3) {\small{$\theta_{R}$}};
+\end{tikzpicture}
+\end{figure}
+\end{minipage}
+\end{frame}
+\begin{frame}
+\frametitle{Respuesta al ejercicio}
+Entonces se tiene como respuesta que el vector resultante tiene como magnitud y el ángulo de dirección con respecto al eje $x$ horizontal:
+\begin{align*}
+\text{Magnitud} &= \SI{503.90}{\meter} \\[0.5em]
+\text{Ángulo} &= \ang{152.37}
+\end{align*}
 \end{frame}
 
-\section{Ejercicios}
+\section{Sobre el ángulo}
 \frame{\tableofcontents[currentsection, hideothersubsections]}
-\subsection{Ejercicio 1}
+\subsection{Revisando la referencia}
 
 \begin{frame}
-\frametitle{Enunciado del Ejercicio 1}
-Del siguiente sistema de vectores determina por el método analítico el valor de la resultante y el ángulo que forma con respecto al eje $x$ positivo.
+\frametitle{La referencia para el ángulo}
+Es muy importante revisar la referencia en la que se indica el ángulo ya sea para cada vector o para el vector resultante.
+\\
+\bigskip
+\pause
+En los ejercicios anteriores hemos tenido: \emph{... cuál es el valor del ángulo del desplazamiento resultante, medido respecto al eje $x$ positivo.}
 \end{frame}
-\begin{frame}[plain]
+\begin{frame}
+\frametitle{Con respecto al eje $x$ positivo}
+Si el enunciado indica que debemos de tomar como referencia el eje $x$ positivo, entonces para cada vector en el sistema a resolver, el ángulo debe de medirse con respecto a este eje.
+\end{frame}
+\begin{frame}
+\frametitle{El caso de los cuadrantes}
+En los cuadrantes II y III vimos que por la trigonometría involucrada, hay un cambio con respecto a las funciones trigonométricas para obtener las componentes de los vectores en los ejes $x$ e $y$.
+\end{frame}
+\begin{frame}
+\frametitle{Cuando no se indica la referencia}
+Es posible que el enunciado de un ejercicio no nos indique la referencia con respecto al eje $x$ para medir el ángulo.
+\\
+\bigskip
+\pause
+En estos casos debemos de apoyarnos con la geometría en el plano cartesiano.
+\end{frame}
+\begin{frame}
+\frametitle{Ejemplo 1}
+Veamos el siguiente ejemplo donde nos piden calcular las componentes del vector con el ángulo $\theta$ que se indica:
+\pause
 \begin{figure}
 \centering
 \begin{tikzpicture}[scale=0.8]
-    \draw (-4, 0) -- (9, 0);
-    \draw (0, -4) -- (0, 6);
-    \draw [-stealth, thick, color=blue] (0, 0) -- (8, 0) node [below, midway] {$\va{F}_{1} = \SI{8}{\newton}$};
-    \draw [-stealth, thick, color=blue] (0, 0) -- (4.59, 3.85) node [above, midway, rotate=40] {$\va{F}_{2} = \SI{6}{\newton}$};
-    \draw [color=blue] (0.5, 0) arc(0:40:0.5);
-    \node [color=blue] at (2, 0.3) {$\theta_{2} = \ang{40}$};
-    \draw [-stealth, thick, color=blue] (0, 0) -- (-2.59, -1.5) node [below, midway, rotate=30] {$\va{F}_{3} = \SI{3}{\newton}$};
-    \draw [color=blue] (-0.5, 0) arc(180:210:0.5);
-    \node [color=blue] at (-2,- 0.3) {$\theta_{3} = \ang{30}$};
-    \draw [-stealth, thick, color=blue] (0, 0) -- (0, 5) node [left, midway] {$\va{F}_{4} = \SI{5}{\newton}$};
+    \draw (-2, 0) -- (2, 0);
+    \draw (0, -1) -- (0, 5) ;
+    \draw [-stealth, thick] (0, 0) -- (-1.368, 3.758) node [left, near end] {$\va{a}$};
+    \draw (0, 0.75) arc(90:110:0.8);
+    \node at (1.5, 0.75) {$\theta = \ang{20}$};
 \end{tikzpicture}
 \end{figure}
 \end{frame}
 \begin{frame}
-\frametitle{Recomendación para la solución}
-Es conveniente enlistar los vectores involucrados de tal manera que tengamos tanto la magnitud como el ángulo que establece su dirección.
+\frametitle{Revisando el caso en el cuadrante II}
+\begin{minipage}{0.35\linewidth}
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[scale=0.7]
+      \draw (-2, 0) -- (2, 0);
+      \draw [thick, color=red] (0, 0) -- (0, 5) ;
+      \draw (0, 0) -- (0, -0.5) ;
+      \draw [-stealth, thick] (0, 0) -- (-1.368, 3.758) node [left, near end] {$\va{a}$};
+      \draw (0, 0.75) arc(90:110:0.8);
+      \node at (1.5, 0.75) {$\theta = \ang{20}$};
+  \end{tikzpicture}
+  \end{figure}
+\end{minipage}
+\begin{minipage}{0.6\linewidth}
+De la figura reconocemos que el ángulo $\theta$ se mide a partir del eje $y$ positivo. \pause Si lo medimos desde el eje $x$ positivo, el ángulo sería $\theta = \ang{90} + \ang{20} = \ang{110}$
+\end{minipage}
 \end{frame}
 \begin{frame}
-\frametitle{Lista de vectores}
-\begin{table}
+\frametitle{El ángulo complementario}
+Para obtener las componentes del vector $\va{a}$ se requiere tomar el ángulo complementario $\alpha$ en el segundo cuadrante.
+\end{frame}
+\begin{frame}
+\frametitle{El ángulo complementario}
+\begin{minipage}{0.35\linewidth}
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[scale=0.7]
+      \draw (-2, 0) -- (2, 0);
+      \draw (0, -1) -- (0, 5) ;
+      \draw [-stealth, thick] (0, 0) -- (-1.368, 3.758) node [left, near end] {$\va{a}$};
+      \draw (0, 0.75) arc(90:110:0.8);
+      \node at (1.5, 0.75) {$\theta = \ang{20}$};
+      \draw [thick, color=red] (-0.75, 0) arc(180:110:0.8);
+      \node at (-1.2, 0.5) {$\alpha$};
+  \end{tikzpicture}
+  \end{figure}
+\end{minipage}
+\begin{minipage}{0.6\linewidth}
+Se tiene entonces que:
+\pause
+\begin{align*}
+\alpha &= \ang{90} - \theta = \ang{90} - \ang{20} = \\[0.5em]
+\alpha &= \ang{70}
+\end{align*}
+\end{minipage}  
+\end{frame}
+\begin{frame}
+\frametitle{Las componentes}
+\begin{minipage}{0.35\linewidth}
+\begin{figure}
 \centering
-\begin{tabular}{c | c | c }
-Vector & Magnitud (en $\unit{\newton}$) & Ángulo \\ \hline
-$\va{F}_{1}$ & $8$ & $\theta_{1} = \ang{0}$ \\ \hline
-$\va{F}_{2}$ & $6$ & $\theta_{2} = \ang{40}$ \\ \hline
-$\va{F}_{3}$ & $3$ & $\theta_{3} = \ang{30}$ \\ \hline
-$\va{F}_{4}$ & $5$ & $\theta_{4} = \ang{90}$ \\ \hline
-\end{tabular}
-\end{table}
+\begin{tikzpicture}[scale=0.7]
+    \draw (-2.5, 0) -- (0.5, 0);
+    \draw (0, -1) -- (0, 5) ;
+    \draw [-stealth, thick] (0, 0) -- (-1.368, 3.758) node [right, near end] {$\va{a}$};
+    \draw [thick, color=red] (-0.5, 0) arc(180:110:0.5);
+    \node at (-0.8, 0.5) {$\alpha$};
+    \draw (-1.368, 0) -- (-1.368, 3.758) node [left, midway] {$a_{y}$};
+    \draw (0, 0) -- (0, -1.368) node [left, midway] {$a_{x}$};
+\end{tikzpicture}
+\end{figure}
+\end{minipage}
+\begin{minipage}{0.6\linewidth}
+Por lo que ya podemos calcular las componentes $a_{x}$ y $a_{y}$:
+\pause
+\begin{align*}
+a_{x} &= - \cos \alpha \cdot \abs{a} \\[0.5em] 
+a_{y} &= \sin \alpha \cdot \abs{a}
+\end{align*}
+\end{minipage}
 \end{frame}
 \begin{frame}
-\frametitle{Calculando las componentes}
-Una vez que tenemos la lista de vectores, iniciamos el cálculo de las componentes en las direcciones $x$ e $y$ de cada uno de ellos.
+\frametitle{Ejemplo 2}
+Veamos el siguiente ejemplo donde nos piden calcular las componentes del vector con el ángulo $\theta$ que se indica:
+\pause
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.8]
+    \draw (-2, 0) -- (0.5, 0);
+    \draw (0, 0.5) -- (0, -4) ;
+    \draw [-stealth, thick] (0, 0) -- (-2, -3.464) node [above, near end] {$\va{b}$};
+    \draw (0, -0.5) arc(270:240:0.5);
+    \node at (1.3, -0.5) {$\theta = \ang{30}$};
+\end{tikzpicture}
+\end{figure}
+\end{frame}
+\begin{frame}
+\frametitle{Ocupando un eje como referencia}
+\begin{minipage}{0.35\linewidth}
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.7]
+    \draw (-2, 0) -- (0.5, 0);
+    \draw [thick, color=red] (0, 0) -- (0, -4);
+    \draw (0, 0) -- (0, 0.5);
+    \draw [-stealth, thick] (0, 0) -- (-2, -3.464) node [above, near end] {$\va{b}$};
+    \draw (0, -0.5) arc(270:240:0.5);
+    \node at (1.3, -0.5) {$\theta = \ang{30}$};
+\end{tikzpicture}
+\end{figure}
+\end{minipage}
+\begin{minipage}{0.6\linewidth}
+Tenemos un ángulo $\theta = \ang{30}$ con respecto al eje $y$ negativo.
+\\
+Podemos ocupar como referencia el eje $x$ negativo, usando para ello, el ángulo complementario en este III cuadrante.
+\end{minipage}
+\end{frame}
+\begin{frame}
+\frametitle{Ocupando un eje como referencia}
+\begin{minipage}{0.35\linewidth}
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=0.7]
+    \draw [thick, color=red] (-2, 0) -- (0, 0);
+    \draw (0, 0) -- (0.5, 0);
+    \draw (0, 0) -- (0, -4);
+    \draw [-stealth, thick] (0, 0) -- (-2, -3.464) node [above, near end] {$\va{b}$};
+    \draw [color=red] (-0.5, 0) arc(180:240:0.5);
+    \node at (-1.3, 0.5) [color=red] {$\alpha = \ang{60}$};
+\end{tikzpicture}
+\end{figure}
+\end{minipage}
+\begin{minipage}{0.6\linewidth}
+Tenemos un ángulo $\alpha = \ang{60}$ con respecto al eje $x$ negativo.
+\end{minipage}
+\end{frame}
+\begin{frame}
+\frametitle{Los valores de las componentes}
+Veremos que se obtienen los mismo valores de las componentes del vector al utilizar cualquiera de los dos ángulos $\theta$ o $\alpha$.
 \\
 \bigskip
 \pause
-Siendo recomendable también hacer una tabla con las componentes.
+Si consideramos que la magnitud del vector $\va{b}$ es $\abs{\va{b}} = 3$.
 \end{frame}
 \begin{frame}
-\frametitle{Tabla con las componentes}
-\begin{table}
+\frametitle{Los valores de las componentes}
+\begin{minipage}{0.35\linewidth}
+\begin{figure}
 \centering
-\begin{tabular}{c | l | l | c}
-Componente & Expresión & Sustitución & Valor \\ \hline
-$F_{1x}$ & $\cos \theta_{1} \cdot F_{1}$ & $\cos \ang{0} \cdot \SI{8}{\newton}$ & $\SI{8}{\newton}$ \\ \hline
-$F_{1y}$ & $\sin \theta_{1} \cdot F_{1}$ & $\sin \ang{0} \cdot \SI{8}{\newton}$ & $\SI{0}{\newton}$ \\ \hline
-$F_{2x}$ & $\cos \theta_{2} \cdot F_{2}$ & $\cos \ang{40} \cdot \SI{6}{\newton}$ & $\SI{4.59}{\newton}$ \\ \hline
-$F_{2y}$ & $\sin \theta_{2} \cdot F_{2}$ & $\sin \ang{40} \cdot \SI{6}{\newton}$ & $\SI{3.85}{\newton}$ \\ \hline
-\end{tabular}
-\end{table}
+\begin{tikzpicture}[scale=0.7]
+    \draw [thick, color=red] (-2, 0) -- (0, 0);
+    \draw (0, 0) -- (0.5, 0);
+    \draw (0, 0) -- (0, -4);
+    \draw [-stealth, thick] (0, 0) -- (-2, -3.464) node [above, near end] {$\va{b}$};
+    \draw (0, -0.5) arc(270:240:0.5);
+    \node at (1.3, -0.5) {$\theta = \ang{30}$};
+    \draw [color=red] (-0.5, 0) arc(180:240:0.5);
+    \node at (-1.3, 0.5) [color=red] {$\alpha = \ang{60}$};
+\end{tikzpicture}
+\end{figure}
+\end{minipage}
+\begin{minipage}{0.6\linewidth}
+La componente $b_{x}$ es:
+\pause
+\begin{eqnarray*}
+\begin{aligned}
+b_{x} &= - \sin \theta \cdot \abs{\va{b}} = \pause -(\sin \ang{30})(3) = \\[0.5em] \pause
+&= -(0.5)(3) = \pause -1.5 \\[0.5em] \pause
+b_{x} &= -\sin \alpha \cdot \abs{\va{b}} = \pause - (\cos \ang{60})(3) = \\[0.5em] \pause
+&= - (0.5)(3) = \pause - 1.5
+\end{aligned}
+\end{eqnarray*}
+\end{minipage}
 \end{frame}
 \begin{frame}
-\frametitle{Tabla con las componentes}
-\begin{table}
+\frametitle{Los valores de las componentes}
+\begin{minipage}{0.35\linewidth}
+  \begin{figure}
 \centering
-\begin{tabular}{c | l | l | c}
-Componente & Expresión & Sustitución & Valor \\ \hline
-$F_{3x}$ & $-\cos \theta_{3} \cdot F_{3}$ & $-\cos \ang{30} \cdot \SI{3}{\newton}$ & $-\SI{2.59}{\newton}$ \\ \hline
-$F_{3y}$ & $-\sin \theta_{3} \cdot F_{3}$ & $-\sin \ang{30} \cdot \SI{3}{\newton}$ & $-\SI{1.5}{\newton}$ \\ \hline
-$F_{4x}$ & $\cos \theta_{4} \cdot F_{4}$ & $\cos \ang{90} \cdot \SI{5}{\newton}$ & $\SI{0}{\newton}$ \\ \hline
-$F_{4y}$ & $\sin \theta_{4} \cdot F_{4}$ & $\sin \ang{90} \cdot \SI{5}{\newton}$ & $\SI{5}{\newton}$ \\ \hline
-\end{tabular}
-\end{table}
-\end{frame}
-\begin{frame}
-\frametitle{Recuperando las componentes del vector resultante}
-Ahora ya podemos calcular las componentes del vector resultante, \pause recordemos que:
-\pause
+\begin{tikzpicture}[scale=0.7]
+    \draw [thick, color=red] (-2, 0) -- (0, 0);
+    \draw (0, 0) -- (0.5, 0);
+    \draw (0, 0) -- (0, -4);
+    \draw [-stealth, thick] (0, 0) -- (-2, -3.464) node [above, near end] {$\va{b}$};
+    \draw (0, -0.5) arc(270:240:0.5);
+    \node at (1.3, -0.5) {$\theta = \ang{30}$};
+    \draw [color=red] (-0.5, 0) arc(180:240:0.5);
+    \node at (-1.3, 0.5) [color=red] {$\alpha = \ang{60}$};
+\end{tikzpicture}
+\end{figure}
+\end{minipage}
+\begin{minipage}{0.6\linewidth}
+La componente $b_{y}$ es:
 \begin{eqnarray*}
 \begin{aligned}
-F_{Rx} &= \nsum_{i=1}^{4} F_{ix} = \\[0.5em] \pause
-&= F_{1x} + F_{2x} + F_{3x} + F_{4x} = \\[0.5em] \pause
-&= \SI{8}{\newton} {+} \SI{4.59}{\newton} {+} (-\SI{2.59}{\newton}) {+} \SI{0}{\newton} = \\[0.5em] \pause
-&= \SI{9.69}{\newton}
+b_{y} &= - \cos \theta \cdot \abs{\va{b}} = \pause - (\cos \ang{30})(3) = \\[0.5em] \pause
+&= - (0.866)(3) = \pause - 2.59 \\[0.5em] \pause
+b_{y} &= - \sin \alpha \cdot \abs{\va{b}} = \pause - (\sin \ang{60})(3) = \\[0.5em] \pause
+&= - (0.866)(3) = \pause - 2.59
 \end{aligned}
 \end{eqnarray*}
+\end{minipage}
 \end{frame}
 \begin{frame}
-\frametitle{Recuperando las componentes del vector resultante}
-Para la componente $F_{Ry}$:
-\pause
-\begin{eqnarray*}
-\begin{aligned}
-F_{Ry} &= \nsum_{i=1}^{4} F_{iy} = \\[0.5em] \pause
-&= F_{1y} + F_{2y} + F_{3y} + F_{4y} = \\[0.5em] \pause
-&= \SI{0}{\newton} {+} \SI{3.85}{\newton} {+} (-\SI{1.5}{\newton}) {+} \SI{5}{\newton} = \\[0.5em] \pause
-&= \SI{7.35}{\newton}
-\end{aligned}
-\end{eqnarray*}
+\frametitle{Recomendación para el ángulo}
+Como hemos revisado, se obtiene el valor de la componente del vector, ya sea utilizando el ángulo que se nos indica en el enunciado, o su complemento.
 \end{frame}
 \begin{frame}
-\frametitle{Magnitud del vector resultante}
-Una vez obtenidas las componentes en $x$ e $y$, calculamos la magnitud del vector resultante:
-\pause
-\begin{eqnarray*}
-\begin{aligned}
-\abs{F_{R}} &= \sqrt{(F_{Rx})^{2} + (F_{Ry})^{2}} = \\[0.5em] \pause
-&= \sqrt{(\SI{9.69}{\newton})^{2} + (\SI{7.35}{\newton})^{2}} = \\[0.5em] \pause
-&= \sqrt{\SI{93.89}{\square\newton} + \SI{54.02}{\square\newton}} = \\[0.5em] \pause
-&= \sqrt{\SI{147.91}{\square\newton}} = \\[0.5em] \pause
-&= \SI{12.16}{\newton}
-\end{aligned}
-\end{eqnarray*}
+\frametitle{Recomendación para el ángulo}
+Se recomienda utilizar el ángulo que nos permita calcular la componente del vector en el eje $x$ en cada cuadrante, de tal manera que se ocupa la función trigonométrica \textbf{coseno}, \pause mientras que para la componente en $y$, sea la función \textbf{seno}.
 \end{frame}
-\begin{frame}
-\frametitle{El ángulo del vector resultante}
-Tenemos que $F_{Rx} > 0$ y $F_{Ry} > 0$, por lo que el vector resultante está en el cuadrante I, \pause con esos valores podemos calcular el valor del ángulo del vector resultante:
-\pause
-\begin{eqnarray*}
-\begin{aligned}
-\tan \theta_{R} &= \dfrac{F_{Ry}}{F_{Rx}} = \pause
- \dfrac{\SI{7.35}{\newton}}{\SI{9.69}{\newton}} = \pause  0.7585 \\[0.5em] \pause
-\arctan(\tan \theta_{R}) &= \arctan(0.7585) \\[0.5em] \pause
-\theta_{R} &= \ang{37.18}
-\end{aligned}
-\end{eqnarray*}
-\end{frame}
+
 \end{document}
